@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background: url("./assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.todo-list {
+  text-align: center;
+}
+
+.todo-list .title {
+  font-size: 3.8em;
+}
+
+.input-elements {
+  display: flex;
+  justify-content: center;
+}
+
+.input-elements input {
+  padding: 16px;
+  width: 360px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid hsla(0, 9%, 59%, 0.838);
+  outline: none;
+}
+
+.input-elements input[type="text"] {
+  font-size: 2em;
+}
+
+.input-elements button {
+  background-color: hsla(120, 82%, 59%, 0.858);
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 90px;
+  height: 71px;
+  cursor: pointer;
+  font-size: 1.6em;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container ol {
+  padding: 0;
+  list-style-type: none;
+  width: 580px;
+  margin-top: 30px;
+}
+
+.list-container li {
+  height: 70px;
+  background-color: hsla(0, 0%, 87%, 0.616);
+  padding: 18px;
+  font-size: 2em;
+  margin-bottom: 10px;
+  border: 3px solid hsl(0, 0%, 75%);
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.list-container .list-text {
+  flex: 1;
+}
+
+.list-container button {
+  padding: 10px 16px;
+  font-size: 16px;
+  width: 60px;
+  height: 50px;
+}
+
+.list-container .move-up-task,
+.move-down-task {
+  background-color: hsla(240, 98%, 53%, 0.806);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-container .delete-list-button {
+  background-color: hsla(0, 96%, 44%, 0.806);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 486px) {
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-elements input {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-elements input {
+    max-width: 240px;
+  }
+}
